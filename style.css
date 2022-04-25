@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: solid 1px darkblue; */
+}
+header{
+    display: flex;
+    justify-content: space-around;
+}
+.bm{
+    width: 100%;
+    height: 40px;
+    color: white;
+    text-align: center;
+    position: relative;
+    /* background-color: black; */
+}
+/* забрати margin і width: 100%; */
+.bma{
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid #fff;
+}
+.vp{
+    background-color: #0013ff;
+}
+.sp{
+    background-image: linear-gradient(to bottom, #0013ff, #d9eb12);
+}
+.np{
+    background-color: #d9eb12;
+}
+#check-menu{
+    display: none;
+}
+.label-menu{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+    line-height: 40px;
+}
+.burger-line{
+    position: absolute;
+    width: 35px;
+    height: 2px;
+    top: 8px;
+    right: 10px;
+    background-color: aqua;
+    transition: 0.5s;
+}
+.secondd, .thirdd{
+    top: 18px;
+}
+.fourthh{
+    top: 28px;
+}
+.main-menu{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(100%);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+#check-menu:checked ~ .firstt{
+    display: none;
+}
+#check-menu:checked ~ .fourthh{
+    display: none;
+}
+#check-menu:checked ~ .secondd{
+    transform: rotate(45deg);
+}
+#check-menu:checked ~ .thirdd{
+    transform: rotate(-45deg);
+}
+#check-menu:checked ~ .main-menu{
+    max-height: 500px;
+    font-size: 16px;
+}
+.logotype{
+    color: aqua;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 35px;
+}
+a{
+    text-decoration: none;
+    color: aqua;
+    padding-bottom: 6px;
+    font-family: 'Fredoka', sans-serif;
+}
+.title{
+    text-transform: uppercase;
+    font-family: 'Fredoka', sans-serif;
+}
+.subetitle{
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+.amazserv{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.first{
+    padding-top: 100px;
+}
+.inline{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.line{
+    height: 2px;
+    width: 80px;
+    border-bottom: red solid;
+    border-radius: 1px;
+}
+.red{
+    margin-top: 50px;
+}
+.orange{
+    display: flex;
+    justify-content: space-around;
+}
+.text{
+    font-family: 'Noto Sans', sans-serif;
+    color: gray;
+    margin-left: 20px;
+}
+.text h3{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.text p{
+    font-size: 12px;
+}
+.purple{
+    display: flex;
+    width: 30%;
+}
+.purple img{
+    width: 34px;
+    height: 33px;
+}
+#orange{
+    padding-bottom: 70px;
+}
+.headtext{
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.btext{
+    text-align: center;
+    color: gray;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+.photography{
+    padding-top: 50px;
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin: auto;
+}
+.mainphoto:hover{
+    box-shadow: 5px 5px 0 0 aqua;
+    background: linear-gradient(to left bottom, #ff000077, #fff70075), url(img/photo_2022-04-02_11-13-02.jpg);
+    background-size: cover;
+}
+.mainphoto:hover .minor{
+    display: flex;
+}
+.mainphoto{
+    background-image: url(img/photo_2022-04-02_11-13-02.jpg);
+    width: 306px;
+    height: 378px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+.minor{
+    width: 225px;
+    height: 55px;
+    display: none;
+}
+.miniminor{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    border-right: 3px solid red;
+}
+.stop{
+    border-right: none;
+}
+.miniminor:hover{
+    background-color: aqua;
+}
+.sminor{
+    background-image: url(img/photo_2022-04-02_11-13-41.jpg);
+}
+.sminor:hover{
+    box-shadow: 5px 5px 0 0 aqua;
+    background: linear-gradient(to left bottom, #ff000077, #fff70075), url(img/photo_2022-04-02_11-13-41.jpg);
+    background-size: cover;
+}
+.tminor{
+    background-image: url(img/photo_2022-04-02_11-13-45.jpg);
+}
+.tminor:hover{
+    box-shadow: 5px 5px 0 0 aqua;
+    background: linear-gradient(to left bottom, #ff000077, #fff70075), url(img/photo_2022-04-02_11-13-45.jpg);
+    background-size: cover;
+}
+.bottomt{
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+.btitle{
+    color: rgba(0, 0, 0, 0.74);
+}
+.bt{
+    font-style: italic;
+    color: gray;
+}
+.corp{
+    font-family: sans-serif;
+}
+.llink{
+    color: red;
+}
+footer{
+    padding-top: 50px;
+    font-family: sans-serif;
+}
+hr{
+    width: 80%;
+    margin: auto;
+}
+::placeholder{
+    font-style: italic;
+    color: gray;
+}
+.mfooter{
+    display: flex;
+    justify-content: space-around;
+}
+#but{
+    background-color: rgb(0, 255, 191);
+    border: none;
+    width: 130px;
+    height: 30px;
+    font-family: sans-serif;
+}
+#ipt{
+    height: 30px;
+    font-family: sans-serif;
+}
+@media (min-width: 750px) and (max-width: 950px) {
+    .photography{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (min-width: 320px) and (max-width: 749px) {
+    .photography{
+        flex-direction: column;
+        align-items: center;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigation{
+        width: 100%;
+    }
+    ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    li{
+        margin-top: 10px;
+    }
+    .first{
+        padding-top: 40px;
+    }
+    .red{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .orange{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mfooter{
+        flex-direction: column;
+        align-items: center;
+    }
+    .purple{
+        width: 70%;
+        margin-top: 50px;
+    }
+    #orange{
+        padding-bottom: 0;
+    }
+    .mform{
+        margin-top: 15px;
+    }
+}
